@@ -91,11 +91,6 @@ public class Thirdfairy extends AppCompatActivity {
         Log.d("Thirdfairy",date4);
         textView4.setText(String.valueOf("成绩  "+date4));
         assert bundle != null;
-        //final int d1=bundle.getInt(date1);
-     // final int d2=bundle.getInt(date2);
-    //  final int d3=bundle.getInt(date3);
-      // final int d4=bundle.getInt(date4);
-        //final double date5=(d1+d2+d3+d4)/4;
         String d1=date1;
         String d2=date2;
         String d3=date3;
@@ -139,8 +134,6 @@ public class Thirdfairy extends AppCompatActivity {
         {
             zp.setText("过山车?");
         }
-        //@SuppressLint("DefaultLocale") String ave= String.format("%.1f",date5);
-        //textView5.setText(String.valueOf(ave));
         textView5.setText(String.valueOf(date5));
         button=(Button) findViewById(R.id.jy);
         button.setOnClickListener(new View.OnClickListener() {
