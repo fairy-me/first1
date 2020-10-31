@@ -55,30 +55,12 @@ public class Secondfairy extends AppCompatActivity {
                 int d2=Integer.parseInt(date2);
                 int d3=Integer.parseInt(date3);
                 int d4=Integer.parseInt(date4);
-               /* if (TextUtils.isEmpty(date1)||TextUtils.isEmpty(date2)||TextUtils.isEmpty(date3)||TextUtils.isEmpty(date4)){
-                    Toast.makeText(Secondfairy.this,"数据不能为空",Toast.LENGTH_SHORT).show();}
-                 if (d1>=0&&d1<=100&&d2>=0&&d2<=100&&d3>=0&&d3<=100&&d4>=0&&d4<=100){
-                Intent intent = new Intent(Secondfairy.this, Thirdfairy.class);
-                intent.putExtra("math",date1);
-                intent.putExtra("comp",date2);
-                intent.putExtra("engl",date3);
-                intent.putExtra("jing",date4);
-                intent.putExtra("mc1",mc1);
-                intent.putExtra("mc2",mc2);
-                intent.putExtra("mc3",mc3);
-                intent.putExtra("mc4",mc4);
-                startActivity(intent);}
-                else if (d1<0||d2<0||d3<0||d4<0)
-                { Toast.makeText(Secondfairy.this,"数据不能为负数",Toast.LENGTH_SHORT).show();}
-                else
-                {
-                    Toast.makeText(Secondfairy.this,"输入数据有误",Toast.LENGTH_SHORT).show();
-                }*/
+              
                if (d1>100||d2>100||d3>100||d4>100)
                {
                    Toast.makeText(Secondfairy.this,"输入数据有误",Toast.LENGTH_SHORT).show();
                }
-               //else if (TextUtils.isEmpty(date1)||TextUtils.isEmpty(date2)||TextUtils.isEmpty(date3)||TextUtils.isEmpty(date4)){
+               
                 else if((first.getText().toString().equals("")) ||(second.getText().toString().equals("")) ||(third.getText().toString().equals("")) ||(forth.getText().toString().equals(""))){
                     Toast.makeText(Secondfairy.this,"数据不能为空",Toast.LENGTH_SHORT).show();}
                 else
