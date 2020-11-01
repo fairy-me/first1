@@ -51,18 +51,14 @@ public class Secondfairy extends AppCompatActivity {
                 String mc2 = km2.getText().toString();
                 String mc3 = km3.getText().toString();
                 String mc4 = km4.getText().toString();
-                int d1=Integer.parseInt(date1);
-                int d2=Integer.parseInt(date2);
-                int d3=Integer.parseInt(date3);
-                int d4=Integer.parseInt(date4);
-              
-               if (d1>100||d2>100||d3>100||d4>100)
+                 if((TextUtils.isEmpty(date1))||(TextUtils.isEmpty(date2))||(TextUtils.isEmpty(date3))||(TextUtils.isEmpty(date4))){
+                    Toast.makeText(Secondfairy.this,"数据不能为空",Toast.LENGTH_LONG).show();}
+                
+              else if (Integer.parseInt(date1)>100||Integer.parseInt(date2)>100||Integer.parseInt(date3)>100||Integer.parseInt(date4)>100)
                {
                    Toast.makeText(Secondfairy.this,"输入数据有误",Toast.LENGTH_SHORT).show();
                }
-               
-                else if((first.getText().toString().equals("")) ||(second.getText().toString().equals("")) ||(third.getText().toString().equals("")) ||(forth.getText().toString().equals(""))){
-                    Toast.makeText(Secondfairy.this,"数据不能为空",Toast.LENGTH_SHORT).show();}
+             
                 else
                {
                    Intent intent = new Intent(Secondfairy.this, Thirdfairy.class);
